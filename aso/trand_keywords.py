@@ -1,6 +1,6 @@
 from typing import Dict, Any
 
-from main import ASO
+from aso.main import ASO
 
 class TrendKeywords:
 

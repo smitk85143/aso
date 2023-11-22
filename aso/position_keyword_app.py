@@ -1,7 +1,7 @@
 from typing import Any, Dict, List
 import yake
 
-from main import ASO
+from aso.main import ASO
 
 class PositionKeywordApp:
 
