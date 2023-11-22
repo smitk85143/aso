@@ -1,12 +1,12 @@
-from setuptools import setup
+import setuptools
 
-setup(
+setuptools.setup(
    name='aso',
    version='0.1',
    description='App Store Optimization (ASO)',
    author='Smit Kukadiya',
    author_email='smitk85143@gmail.com',
-   packages=['aso'],
+   packages=setuptools.find_packages(),
    url="https://github.com/smit-kukadiya/aso.git",
    entry_points={
         'console_scripts': [
