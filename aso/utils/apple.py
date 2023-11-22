@@ -2,7 +2,7 @@ from itunes_app_scraper.scraper import AppStoreScraper
 
 appStoreScraper = AppStoreScraper()
 
-from google_play_scraper.features.aso.utils.calc import *
+from aso.utils.calc import *
 
 MAX_KEYWORD_LENGTH = 25
 MAX_SEARCH = 250

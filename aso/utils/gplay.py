@@ -4,7 +4,7 @@ from google_play_scraper.features.collection import collection
 from google_play_scraper.features.leaderboard import leaderboard
 from google_play_scraper.features.suggest_keyword import suggest_keyword
 
-from google_play_scraper.features.aso.utils.calc import *
+from aso.utils.calc import *
 
 MAX_KEYWORD_LENGTH = 25
 MAX_SEARCH = 250

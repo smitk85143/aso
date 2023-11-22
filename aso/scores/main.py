@@ -1,5 +1,5 @@
-from difficulty import build as build_difficulty
-from traffic import build as build_traffic
+from aso.scores.difficulty import build as build_difficulty
+from aso.scores.traffic import build as build_traffic
 
 from aso.main import ASO
 
