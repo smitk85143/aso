@@ -19,7 +19,7 @@ setuptools.setup(
        'greek',
        'lxml',
        'yake',
-       'google-play-scraper @ git+https://github.com/smit-kukadiya/google-play-scraper.git@test-aso',
+       'google-play-scraper @ git+https://github.com/smit-kukadiya/google-play-scraper.git',
        'itunes-app-scraper-dmi @ git+https://github.com/smit-kukadiya/itunes-app-scraper.git'
     ], 
 )
