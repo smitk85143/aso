@@ -17,8 +17,6 @@ results = PositionKeywordApp("google").PositionKeywordApp(app_id="com.openai.cha
 print(results)
 ```
 
-Documentation is not available separately yet, but the code is relatively
-simple.
 
 ## Thanks to our Resources
 [google-play-scracper](https://github.com/JoMingyu/google-play-scraper) <br/>
