@@ -22,4 +22,4 @@ simple.
 
 ## Resources
 [google-play-scracper](https://github.com/JoMingyu/google-play-scraper) <br/>
-[itunes-app-scraper](https://github.com/smit-kukadiya/itunes-app-scraper)
+[itunes-app-scraper](https://github.com/digitalmethodsinitiative/itunes-app-scraper)
