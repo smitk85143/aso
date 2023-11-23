@@ -7,8 +7,6 @@ Much of this has been adapted from
 nodeJS-based repo that does similar things. But this repo uses Python.
 
 ## Getting started
-The following repo app details about all apps similar to the first result 
-for the 'fortnite' search query:
 
 ```
 from aso import PositionKeywordApp
