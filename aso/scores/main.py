@@ -9,7 +9,7 @@ class Score:
         self.aso_instance = ASO(store)
 
     def score(self, keyword: str, lang: str = "en", country: str = "us"):
-        appsId = [ single_app['appId'] for single_app in self.aso_instance.search(keyword, lang=lang, country=country)]
+        appsId = [ single_app for single_app in self.aso_instance.search(keyword, lang=lang, country=country)]
         difficulty = build_difficulty(self.aso_instance.build_store())(keyword, appsId, lang, country)
         traffic = build_traffic(self.aso_instance.build_store())(keyword, appsId, lang, country)
         return {

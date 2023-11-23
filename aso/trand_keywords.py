@@ -18,7 +18,9 @@ class TrendKeywords:
         """
         try:
 
-            suggests = self.aso_instance.suggest(keyword, lang=lang, country=country)
+            suggests = self.aso_instance.suggest(keyword, country=country)
+            if suggests == []:
+                return {"error": "No data found"}
             suggests.pop(0)
             list1 = []
             map = {}
@@ -40,7 +42,9 @@ class TrendKeywords:
                 for sug in lst:
             
                     if map.get(sug, False) == False:
-                        suggests = self.aso_instance.suggest(sug, lang=lang, country=country)
+                        suggests = self.aso_instance.suggest(sug, country=country)
+                        if suggests == []:
+                            continue
                         suggests.pop(0)
                         map[sug] = True
 

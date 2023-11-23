@@ -55,7 +55,7 @@ def build(store):
     def get_top_apps(apps, lang, country):
         top = apps[:10]
         if apps and "description" not in apps[0]:
-            return [store['app'](single_app, lang, country)["appId"] for single_app in top]
+            return [store['app'](single_app, lang=lang, country=country)["trackId"] for single_app in top]
         else:
             return top
 

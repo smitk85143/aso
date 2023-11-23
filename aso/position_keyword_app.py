@@ -39,7 +39,7 @@ class PositionKeywordApp:
         """
         if keywords is None:
             data = self.aso_instance.app(app_id, lang=lang, country=country)
-            full_content = [ f"{data['title']} {data['description']} {data['developer']}" ]
+            full_content = [ f"{data['trackCensoredName']} {data['description']} {data['sellerName']}" ]
             keywords = []
             for txt in full_content:
                 extractor = yake.KeywordExtractor(lan=lang, n=3, dedupLim=0.9, features=None, top=num)

@@ -1,5 +1,3 @@
-from typing import Any, Dict, List
-import yake
 import google_play_scraper as PlayStoreScraper
 from itunes_app_scraper.scraper import AppStoreScraper
 from aso.utils.gplay import build_store as build_google_store

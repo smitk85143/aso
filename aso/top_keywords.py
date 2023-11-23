@@ -16,7 +16,11 @@ class TopKeywords:
         alphabet = "abcdefghijklmnopqrstuvwxyz"
         map_popularity = {}
         for char in alphabet:
-            suggests = self.aso_instance.suggest_keyword(char, country=country)
+            suggests = self.aso_instance.suggest(char, country=country)
+            if len(suggests) == 0:
+                continue
+            elif len(suggests) > 7:
+                suggests = suggests[:6]
             minus = 0
             for s in suggests:
                 map_popularity[s] = 6 - minus
