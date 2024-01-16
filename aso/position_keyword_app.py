@@ -3,6 +3,8 @@ import yake
 
 from aso.main import ASO
 
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
+
 class PositionKeywordApp:
 
     def __init__(self, store: str) -> None:
@@ -18,7 +20,7 @@ class PositionKeywordApp:
         relevant_keys = []
         for key in keywords:
             try:
-                search_result = [ x for x in self.aso_instance.search(key[0], lang=lang, country=country) ]
+                search_result = [ x for x in self.aso_instance.search(key[0], lang=lang, country=country, header=headers, timeout=5) ]
             except Exception:
                 continue
             for j, search_app in enumerate(search_result):
