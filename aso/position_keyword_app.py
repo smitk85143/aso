@@ -21,7 +21,7 @@ class PositionKeywordApp:
         for key in keywords:
             try:
                 search_result = [ x for x in self.aso_instance.search(key[0], lang=lang, country=country, timeout=5,
-                                                                    herder={
+                                                                    headers={
                                                                         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'
                                                                     }) ]
             except Exception:
