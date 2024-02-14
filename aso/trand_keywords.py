@@ -67,9 +67,9 @@ class TrendKeywords:
             data = []
 
             for item in map_popularity.items():
-                data.append({"Key phrase": item[0], "Relative popularity": item[1]})
+                data.append({"keyword": item[0], "number": item[1]})
 
-            data = sorted(data, key=lambda k: k['Relative popularity'], reverse=True)
+            data = sorted(data, key=lambda k: k['number'], reverse=True)
 
             return data
         except Exception as e:

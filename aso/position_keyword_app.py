@@ -57,7 +57,7 @@ class PositionKeywordApp:
         position_keywords = self.position_validator(keywords, app_id, lang, country)
         data = []
         for item in position_keywords:
-            data.append({'Key': item[0], "Search position": item[2]})
+            data.append({'keyword': item[0], "number": item[2]})
         data = sorted(data, key=lambda k: k['Search position'])
 
         return data
