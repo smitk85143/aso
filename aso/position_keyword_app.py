@@ -58,6 +58,6 @@ class PositionKeywordApp:
         data = []
         for item in position_keywords:
             data.append({'keyword': item[0], "number": item[2]})
-        data = sorted(data, key=lambda k: k['Search position'])
+        data = sorted(data, key=lambda k: k['number'])
 
         return data
